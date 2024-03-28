@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --trans-color: transparent;
+    --bgcolor: rgba(197, 214, 182, 0.584);
+
+    background: var(--bgcolor);
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 3%;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  hr {
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 10%;
+    color: var(--primary-color);
+  }
+
+
+article p:first-child::first-letter {
+    font-weight: bold;
+    font-size: 4.3rem;
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    float: left;
+    padding: 0 9px 0 0;
+    margin-top: -15px;
+    text-shadow: 2px 3px 2px var(--secondary-color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    
+}
+
+article p:first-child::first-line {
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+}
+
+
+/* Hide the second piece of text by default */
+p.readmore .second {
+    display:none;
+}
+
+/* Hide the first piece of text on hover */
+p.readmore:hover .first {
+    display:none;
+}
+
+/* Re-show the second piece of text on hover */
+p.readmore:hover .second {
+   display:inline;
+}
