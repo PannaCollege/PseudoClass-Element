@@ -65,7 +65,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th scope="row" colspan="2">Made with <span>♥ by PannaCollege,</span> 2024</th>
+                            <th scope="row" colspan="2">Made with <span>♥ by PannaCollege,</span> </span> <span id="currentYear1">2022</span></th>
                         </tr>
                     </tfoot>
                 </table><hr>
@@ -90,11 +90,20 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th scope="row" colspan="2">Made with <span>♥ by PannaCollege,</span> 2024</th>
+                            <th scope="row" colspan="2">Made with <span>♥ by PannaCollege,</span> <span id="currentYear2">2022</span></th>
                         </tr>
                     </tfoot>
                 </table>
             </article>
         </section>
     </body>
+    <script>
+        const yearSpan1 = document.querySelector('#currentYear1');
+        const currentYear1 = new Date();
+        yearSpan1.innerText = currentYear1.getFullYear();
+    
+        const yearSpan2 = document.querySelector('#currentYear2');
+        const currentYear2 = new Date();
+        yearSpan2.innerText = currentYear2.getFullYear();
+    </script>
 </html>
